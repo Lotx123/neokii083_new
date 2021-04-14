@@ -81,11 +81,12 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.KONA:
       ret.mass = 1275. + STD_CARGO_KG
       ret.wheelbase = 2.7
-      tire_stiffness_factor = 0.385
+      tire_stiffness_factor = 0.6
     elif candidate in [CAR.KONA_HEV, CAR.KONA_EV]:
       ret.mass = 1395. + STD_CARGO_KG
       ret.wheelbase = 2.6
-      tire_stiffness_factor = 0.385
+      tire_stiffness_factor = 0.6
+      ret.maxSteeringAngleDeg = 120.
     elif candidate in [CAR.IONIQ, CAR.IONIQ_EV_LTD]:
       ret.mass = 1490. + STD_CARGO_KG   #weight per hyundai site https://www.hyundaiusa.com/ioniq-electric/specifications.aspx
       ret.wheelbase = 2.7
@@ -156,7 +157,7 @@ class CarInterface(CarInterfaceBase):
     ret.steerActuatorDelay = 0.
     ret.steerLimitTimer = 2.5
 
-    ret.steerRateCost = 0.4
+    ret.steerRateCost = 0.5
 
     ret.steerMaxBP = [0.]
     ret.steerMaxV = [1.5]
