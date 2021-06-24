@@ -132,9 +132,9 @@ class CarInterface(CarInterfaceBase):
       ret.wheelbase = 2.7
       tire_stiffness_factor = 0.385
     elif candidate in [CAR.K7, CAR.K7_HEV]:
-      tire_stiffness_factor = 0.6
-      ret.mass = 1650. + STD_CARGO_KG
-      ret.wheelbase = 2.855
+      tire_stiffness_factor = 0.5
+      ret.mass = 1522. + STD_CARGO_KG
+      ret.wheelbase = 2.755
     elif candidate == CAR.SELTOS:
       ret.mass = 1310. + STD_CARGO_KG
       ret.wheelbase = 2.6
