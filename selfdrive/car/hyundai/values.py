@@ -457,7 +457,8 @@ FW_VERSIONS = {
     (Ecu.transmission, 0x7e1, None): [b'\xf1\x87CZLUB49370612JF7h\xa8y\x87\x99\xa7hv\x99\x97fv\x88\x87x\x89x\x96O\xff\x88\xff\xff\xff.@\xf1\x816V2C2051\000\000\xf1\0006V2B0_C2\000\0006V2C2051\000\000CSP4N20NS3\000\000\000\000',],
   },
   CAR.K7: {
-    (Ecu.eps, 0x7d4, None): [b'\xf1\000YG  MDPS C 1.00 1.01 56310F6350\000 4YG7C101',],
+    (Ecu.eps, 0x7d4, None): [b'\xf1\000YG  MDPS C 1.00 1.00 99800F6563\000 4YGAC100',],
+    (Ecu.fwdCamera, 0x7c4, None): [b'\xf1\16YG MFC LKAS AT USA 1.00 1.01 95740-F6100 170717',],
   },
 }
 
